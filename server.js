@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const port = 3000;
+const port = 4000;
 
 // Configurar la carpeta 'public' como estática
 app.use(express.static(path.join(__dirname, 'public')));

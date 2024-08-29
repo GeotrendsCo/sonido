@@ -1,0 +1,545 @@
+[
+    {
+        "name": "FUNDAMENTOS DE INGENIERÍA",
+        "children": [
+            {
+                "name": "RAP11",
+                "children": [
+                    {
+                        "name": "FUNDAMENTOS DE PROGRAMACIÓN"
+                    }
+                ]
+            },
+            {
+                "name": "RAP12",
+                "children": [
+                    {
+                        "name": "FUNDAMENTOS DE PROGRAMACIÓN"
+                    }
+                ]
+            },
+            {
+                "name": "RAP13",
+                "children": [
+                    {
+                        "name": "FUNDAMENTOS DE PROGRAMACIÓN"
+                    }
+                ]
+            },
+            {
+                "name": "RAP9",
+                "children": [
+                    {
+                        "name": "CIRCUITOS ELÉCTRICOS"
+                    },
+                    {
+                        "name": "CIRCUITOS ELECTRÓNICOS"
+                    },
+                    {
+                        "name": "DIBUJO ARQUITECTÓNICO"
+                    }
+                ]
+            },
+            {
+                "name": "RAP10",
+                "children": [
+                    {
+                        "name": "CIRCUITOS ELÉCTRICOS"
+                    },
+                    {
+                        "name": "CIRCUITOS ELECTRÓNICOS"
+                    },
+                    {
+                        "name": "DIBUJO ARQUITECTÓNICO"
+                    }
+                ]
+            },
+            {
+                "name": "RAP8",
+                "children": [
+                    {
+                        "name": "DIBUJO ARQUITECTÓNICO"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "INGENIERÍA COMPUTACIONAL",
+        "children": [
+            {
+                "name": "RAP11",
+                "children": [
+                    {
+                        "name": "PROGRAMACIÓN PARA AUDIO"
+                    }
+                ]
+            },
+            {
+                "name": "RAP12",
+                "children": [
+                    {
+                        "name": "PROGRAMACIÓN PARA AUDIO"
+                    },
+                    {
+                        "name": "TEORÍA DE SEÑALES"
+                    },
+                    {
+                        "name": "PROCESAMIENTO DIGITAL DE SEÑALES"
+                    }
+                ]
+            },
+            {
+                "name": "RAP13",
+                "children": [
+                    {
+                        "name": "PROGRAMACIÓN PARA AUDIO"
+                    },
+                    {
+                        "name": "TEORÍA DE SEÑALES"
+                    },
+                    {
+                        "name": "PROCESAMIENTO DIGITAL DE SEÑALES"
+                    }
+                ]
+            },
+            {
+                "name": "RAP7",
+                "children": [
+                    {
+                        "name": "TEORÍA DE SEÑALES"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ARTES SONORAS",
+        "children": [
+            {
+                "name": "RAP1",
+                "children": [
+                    {
+                        "name": "FUNDAMENTOS DE ARMONÍA"
+                    },
+                    {
+                        "name": "TECNOLOGÍAS DE AUDIO"
+                    },
+                    {
+                        "name": "LABORATORIO CREACIÓN SONORA"
+                    },
+                    {
+                        "name": "GRABACIÓN PARA MEDIOS AUDIOVISUALES"
+                    },
+                    {
+                        "name": "POSPRODUCCIÓN MEDIOS AUDIOVISUALES"
+                    },
+                    {
+                        "name": "ENTRENAMIENTO AUDITIVO"
+                    }
+                ]
+            },
+            {
+                "name": "RAP2",
+                "children": [
+                    {
+                        "name": "FUNDAMENTOS DE ARMONÍA"
+                    },
+                    {
+                        "name": "TECNOLOGÍAS DE AUDIO"
+                    },
+                    {
+                        "name": "LABORATORIO CREACIÓN SONORA"
+                    },
+                    {
+                        "name": "SÍNTESIS DEL SONIDO"
+                    },
+                    {
+                        "name": "GRABACIÓN PARA MEDIOS AUDIOVISUALES"
+                    },
+                    {
+                        "name": "POSPRODUCCIÓN MEDIOS AUDIOVISUALES"
+                    },
+                    {
+                        "name": "MEZCLA ENVOLVENTE E INMERSIVA"
+                    }
+                ]
+            },
+            {
+                "name": "RAP8",
+                "children": [
+                    {
+                        "name": "FUNDAMENTOS DE ARMONÍA"
+                    },
+                    {
+                        "name": "LABORATORIO CREACIÓN SONORA"
+                    },
+                    {
+                        "name": "GRABACIÓN DIGITAL DEL SONIDO"
+                    },
+                    {
+                        "name": "ENTRENAMIENTO AUDITIVO"
+                    }
+                ]
+            },
+            {
+                "name": "RAP9",
+                "children": [
+                    {
+                        "name": "FUNDAMENTOS DE ARMONÍA"
+                    },
+                    {
+                        "name": "LABORATORIO CREACIÓN SONORA"
+                    },
+                    {
+                        "name": "GRABACIÓN DIGITAL DEL SONIDO"
+                    },
+                    {
+                        "name": "ENTRENAMIENTO AUDITIVO"
+                    }
+                ]
+            },
+            {
+                "name": "RAP3",
+                "children": [
+                    {
+                        "name": "TECNOLOGÍAS DE AUDIO"
+                    },
+                    {
+                        "name": "GRABACIÓN PARA MEDIOS AUDIOVISUALES"
+                    },
+                    {
+                        "name": "POSPRODUCCIÓN MEDIOS AUDIOVISUALES"
+                    }
+                ]
+            },
+            {
+                "name": "RAP5",
+                "children": [
+                    {
+                        "name": "SÍNTESIS DEL SONIDO"
+                    }
+                ]
+            },
+            {
+                "name": "RAP6",
+                "children": [
+                    {
+                        "name": "SÍNTESIS DEL SONIDO"
+                    },
+                    {
+                        "name": "GRABACIÓN DIGITAL DEL SONIDO"
+                    },
+                    {
+                        "name": "POSPRODUCCIÓN MUSICAL"
+                    }
+                ]
+            },
+            {
+                "name": "RAP7",
+                "children": [
+                    {
+                        "name": "SÍNTESIS DEL SONIDO"
+                    },
+                    {
+                        "name": "GRABACIÓN DIGITAL DEL SONIDO"
+                    },
+                    {
+                        "name": "POSPRODUCCIÓN MUSICAL"
+                    }
+                ]
+            },
+            {
+                "name": "RAP4",
+                "children": [
+                    {
+                        "name": "GRABACIÓN PARA MEDIOS AUDIOVISUALES"
+                    },
+                    {
+                        "name": "POSPRODUCCIÓN MEDIOS AUDIOVISUALES"
+                    }
+                ]
+            },
+            {
+                "name": "RAP11",
+                "children": [
+                    {
+                        "name": "POSPRODUCCIÓN MUSICAL"
+                    },
+                    {
+                        "name": "MEZCLA ENVOLVENTE E INMERSIVA"
+                    },
+                    {
+                        "name": "REFUERZO SONORO"
+                    }
+                ]
+            },
+            {
+                "name": "RAP12",
+                "children": [
+                    {
+                        "name": "POSPRODUCCIÓN MUSICAL"
+                    },
+                    {
+                        "name": "MEZCLA ENVOLVENTE E INMERSIVA"
+                    },
+                    {
+                        "name": "REFUERZO SONORO"
+                    }
+                ]
+            },
+            {
+                "name": "RAP13",
+                "children": [
+                    {
+                        "name": "MEZCLA ENVOLVENTE E INMERSIVA"
+                    },
+                    {
+                        "name": "REFUERZO SONORO"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ACÚSTICA AMBIENTAL Y BIOACÚSTICA",
+        "children": [
+            {
+                "name": "RAP7",
+                "children": [
+                    {
+                        "name": "PRINCIPIOS ACÚSTICA Y PSICOACÚSTICA"
+                    },
+                    {
+                        "name": "CONTROL DE RUIDO Y VIBRACIONES"
+                    },
+                    {
+                        "name": "INTRODUCCIÓN A LA INGENIERÍA DE SONIDO"
+                    }
+                ]
+            },
+            {
+                "name": "RAP8",
+                "children": [
+                    {
+                        "name": "PRINCIPIOS ACÚSTICA Y PSICOACÚSTICA"
+                    },
+                    {
+                        "name": "CONTROL DE RUIDO Y VIBRACIONES"
+                    }
+                ]
+            },
+            {
+                "name": "RAP9",
+                "children": [
+                    {
+                        "name": "PRINCIPIOS ACÚSTICA Y PSICOACÚSTICA"
+                    },
+                    {
+                        "name": "CONTROL DE RUIDO Y VIBRACIONES"
+                    }
+                ]
+            },
+            {
+                "name": "RAP10",
+                "children": [
+                    {
+                        "name": "PRINCIPIOS ACÚSTICA Y PSICOACÚSTICA"
+                    },
+                    {
+                        "name": "CONTROL DE RUIDO Y VIBRACIONES"
+                    }
+                ]
+            },
+            {
+                "name": "RAP1",
+                "children": [
+                    {
+                        "name": "INTRODUCCIÓN A LA INGENIERÍA DE SONIDO"
+                    }
+                ]
+            },
+            {
+                "name": "RAP2",
+                "children": [
+                    {
+                        "name": "INTRODUCCIÓN A LA INGENIERÍA DE SONIDO"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ARQUITECTURA Y URBANISMO",
+        "children": [
+            {
+                "name": "RAP7",
+                "children": [
+                    {
+                        "name": "ACÚSTICA"
+                    },
+                    {
+                        "name": "ANÁLISIS VIBRATORIO"
+                    }
+                ]
+            },
+            {
+                "name": "RAP8",
+                "children": [
+                    {
+                        "name": "ACÚSTICA"
+                    },
+                    {
+                        "name": "ANÁLISIS VIBRATORIO"
+                    },
+                    {
+                        "name": "ACÚSTICA DE RECINTOS"
+                    },
+                    {
+                        "name": "DISEÑO SISTEMAS ELECTROACÚSTICOS"
+                    }
+                ]
+            },
+            {
+                "name": "RAP9",
+                "children": [
+                    {
+                        "name": "ACÚSTICA"
+                    },
+                    {
+                        "name": "ACÚSTICA DE RECINTOS"
+                    },
+                    {
+                        "name": "DISEÑO SISTEMAS ELECTROACÚSTICOS"
+                    }
+                ]
+            },
+            {
+                "name": "RAP10",
+                "children": [
+                    {
+                        "name": "ACÚSTICA"
+                    },
+                    {
+                        "name": "ANÁLISIS VIBRATORIO"
+                    },
+                    {
+                        "name": "ACÚSTICA DE RECINTOS"
+                    },
+                    {
+                        "name": "DISEÑO SISTEMAS ELECTROACÚSTICOS"
+                    }
+                ]
+            },
+            {
+                "name": "RAP12",
+                "children": [
+                    {
+                        "name": "ACÚSTICA DE RECINTOS"
+                    },
+                    {
+                        "name": "DISEÑO SISTEMAS ELECTROACÚSTICOS"
+                    }
+                ]
+            },
+            {
+                "name": "RAP13",
+                "children": [
+                    {
+                        "name": "DISEÑO SISTEMAS ELECTROACÚSTICOS"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ARTES SONORAS; ARQUITECTURA Y URBANISMO; ACÚSTICA AMBIENTAL Y BIOACÚSTICA; INGENIERÍA COMPUTACIONAL",
+        "children": [
+            {
+                "name": "RAP7",
+                "children": [
+                    {
+                        "name": "LABORATORIO ACÚSTICA AMBIENTAL"
+                    }
+                ]
+            },
+            {
+                "name": "RAP8",
+                "children": [
+                    {
+                        "name": "LABORATORIO ACÚSTICA AMBIENTAL"
+                    }
+                ]
+            },
+            {
+                "name": "RAP9",
+                "children": [
+                    {
+                        "name": "LABORATORIO ACÚSTICA AMBIENTAL"
+                    }
+                ]
+            },
+            {
+                "name": "RAP10",
+                "children": [
+                    {
+                        "name": "LABORATORIO ACÚSTICA AMBIENTAL"
+                    }
+                ]
+            },
+            {
+                "name": "RAP11",
+                "children": [
+                    {
+                        "name": "LABORATORIO ACÚSTICA AMBIENTAL"
+                    }
+                ]
+            },
+            {
+                "name": "RAP12",
+                "children": [
+                    {
+                        "name": "LABORATORIO ACÚSTICA AMBIENTAL"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ARTES SONORAS; ACÚSTICA AMBIENTAL Y BIOACÚSTICA; INGENIERÍA COMPUTACIONAL",
+        "children": [
+            {
+                "name": "RAP6",
+                "children": [
+                    {
+                        "name": "LAB. AUDIO PARA VIDEOJUEGOS"
+                    }
+                ]
+            },
+            {
+                "name": "RAP7",
+                "children": [
+                    {
+                        "name": "LAB. AUDIO PARA VIDEOJUEGOS"
+                    }
+                ]
+            },
+            {
+                "name": "RAP5",
+                "children": [
+                    {
+                        "name": "LAB. AUDIO PARA VIDEOJUEGOS"
+                    }
+                ]
+            },
+            {
+                "name": "RAP1",
+                "children": [
+                    {
+                        "name": "LAB. AUDIO PARA VIDEOJUEGOS"
+                    }
+                ]
+            }
+        ]
+    }
+]

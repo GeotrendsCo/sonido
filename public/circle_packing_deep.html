@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoomable Circle Packing</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+            overflow: hidden; /* Oculta cualquier contenido que sobrepase el área visible */
+        }
+
+        .node circle {
+            stroke: #000000;
+            stroke-width: 1px;
+            cursor: pointer;
+        }
+
+        .node text {
+            font: 12px sans-serif;
+            font-weight: bold;
+            text-anchor: middle;
+            pointer-events: none;
+            fill: white;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .node--competencia text,
+        .node--rap text,
+        .node--asignatura text,
+        .node--rac text {
+            font-size: 48px;
+        }
+
+        .root-label {
+            font-size: 48px;
+            font-weight: bold;
+            fill: black;
+            text-anchor: middle;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script>
+        fetch('/circle-packing-deep-data')
+            .then(response => response.json())
+            .then(data => {
+                const height = window.innerHeight; // Mantiene la altura según el tamaño de la ventana
+                const width = window.innerWidth;  // Ocupa todo el ancho del navegador
+
+                const colors = ["#f6d18a", "#e9a771", "#d5896f", "#f8e5c1"];
+                const color = d3.scaleOrdinal(colors);
+
+                const pack = data => d3.pack()
+                    .size([width, height])
+                    .padding(3)
+                    (d3.hierarchy(data)
+                        .sum(d => d.value)
+                        .sort((a, b) => b.value - a.value));
+
+                const root = pack(data);
+                let focus = root;
+                let view;
+
+                const svg = d3.select("body")
+                    .append("svg")
+                    .attr("width", width)
+                    .attr("height", height)
+                    .attr("viewBox", `0 0 ${width} ${height}`)
+                    .attr("preserveAspectRatio", "xMidYMid meet") /* Escala proporcionalmente, ocupando el ancho completo */
+                    .style("font", "36px sans-serif")
+                    .style("font-weight", "bold")
+                    .style("display", "block")
+                    .style("background", "#ffffff")
+                    .style("cursor", "pointer")
+                    .on("click", (event) => {
+                        if (focus !== root) zoom(event, root);
+                    });
+
+                const node = svg.append("g")
+                    .attr("transform", `translate(${width / 2},${height / 2})`)
+                    .selectAll("circle")
+                    .data(root.descendants())
+                    .join("circle")
+                    .attr("class", d => {
+                        if (d.depth === 1) return "node node--competencia";
+                        if (d.depth === 2) return "node node--rap";
+                        if (d.depth === 3) return "node node--asignatura";
+                        if (d.depth === 4) return "node node--rac";
+                        return "node";
+                    })
+                    .attr("fill", d => d.children ? color(d.depth) : "#fffbf1")
+                    .attr("pointer-events", d => !d.children ? "none" : null)
+                    .on("mouseover", function () { d3.select(this).attr("stroke", "#000"); })
+                    .on("mouseout", function () { d3.select(this).attr("stroke", null); })
+                    .on("click", (event, d) => {
+                        if (focus !== d) {
+                            if (event && event.stopPropagation) event.stopPropagation();
+                            zoom(event, d);
+                        }
+                    });
+
+                const label = svg.append("g")
+                    .attr("transform", `translate(${width / 2},${height / 2})`)
+                    .style("font", "36px sans-serif")
+                    .style("font-weight", "bold")
+                    .attr("pointer-events", "none")
+                    .attr("text-anchor", "middle")
+                    .selectAll("text")
+                    .data(root.descendants())
+                    .join("text")
+                    .attr("class", d => {
+                        if (d.depth === 1) return "node node--competencia";
+                        if (d.depth === 2) return "node node--rap";
+                        if (d.depth === 3) return "node node--asignatura";
+                        if (d.depth === 4) return "node node--rac";
+                        return "node";
+                    })
+                    .style("fill-opacity", d => d.parent === focus ? 1 : 0)
+                    .style("display", d => d.parent === focus ? "inline" : "none")
+                    .text(d => d.data.name);
+
+                // Añadir la etiqueta para la raíz "INGENIERÍA DE SONIDO"
+                const rootLabel = svg.append("text")
+                    .attr("class", "root-label")
+                    .attr("transform", `translate(${width / 2},${height / 2})`)
+                    .attr("dy", "-600px")
+                    .attr("dx", "0px")
+                    .style("font", "48px sans-serif")
+                    .style("font-weight","bold")
+                    .text("INGENIERÍA DE SONIDO");
+
+                zoomTo([root.x, root.y, root.r * 2]);
+
+                function zoomTo(v) {
+                    const k = Math.min(width / v[2], height / v[2]); // Ajusta el zoom basado en la dimensión más pequeña
+
+                    view = v;
+
+                    label.attr("transform", d => `translate(${(d.x - v[0]) * k},${(d.y - v[1]) * k})`);
+                    node.attr("transform", d => `translate(${(d.x - v[0]) * k},${(d.y - v[1]) * k})`);
+                    node.attr("r", d => d.r * k);
+                }
+
+                function zoom(event, d) {
+                    focus = d;
+
+                    const transition = svg.transition()
+                        .duration(750)
+                        .tween("zoom", () => {
+                            const i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2]);
+                            return t => zoomTo(i(t));
+                        });
+
+                    label
+                        .filter(function (d) { return d.parent === focus || this.style.display === "inline"; })
+                        .transition(transition)
+                        .style("fill-opacity", d => d.parent === focus ? 1 : 0)
+                        .on("start", function (d) { if (d.parent === focus) this.style.display = "inline"; })
+                        .on("end", function (d) { if (d.parent !== focus) this.style.display = "none"; });
+
+                    // Ocultar la etiqueta raíz durante el zoom
+                    if (focus !== root) {
+                        rootLabel.transition(transition).style("opacity", 0);
+                    } else {
+                        rootLabel.transition(transition).style("opacity", 1);
+                    }
+                }
+            })
+            .catch(error => console.error('Error al cargar los datos:', error));
+    </script>
+</body>
+</html>

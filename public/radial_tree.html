@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Tree</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+
+        .node circle {
+            fill: #999;
+        }
+
+        .node text {
+            font: 12px sans-serif;
+        }
+
+        .link {
+            fill: none;
+            stroke: #555;
+            stroke-width: 1.5px;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script>
+        fetch('/radial-tree-data')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);  // Verificar los datos
+
+                const width = 2000;
+                const height = width;
+                const radius = width / 2;
+
+                const color = d3.scaleOrdinal(d3.schemeCategory10); // Escala de colores
+
+                const tree = d3.tree()
+                    .size([2 * Math.PI, radius - 150])
+                    .separation((a, b) => (a.parent == b.parent ? 1 : 2) / a.depth);
+
+                const root = d3.hierarchy({ "name": "Root", "children": data });
+
+                const svg = d3.select("body")
+                    .append("svg")
+                    .attr("width", width)
+                    .attr("height", height)
+                    .attr("viewBox", [-width / 2, -height / 2, width, height])
+                    .style("font", "12px sans-serif");
+
+                const g = svg.append("g");  // Agrupar para aplicar zoom
+
+                const zoom = d3.zoom()
+                    .scaleExtent([0.5, 5])  // Limitar el zoom
+                    .on("zoom", (event) => {
+                        g.attr("transform", event.transform);
+                    });
+
+                svg.call(zoom);  // Aplicar zoom al svg
+
+                const gLink = g.append("g")
+                    .attr("fill", "none")
+                    .attr("stroke", "#555")
+                    .attr("stroke-opacity", 0.4)
+                    .attr("stroke-width", 1.5);
+
+                const gNode = g.append("g")
+                    .attr("cursor", "pointer")
+                    .attr("pointer-events", "all");
+
+                update(root);
+
+                function update(source) {
+                    const nodes = root.descendants().reverse();
+                    const links = root.links();
+
+                    tree(root);
+
+                    const link = gLink.selectAll("path")
+                        .data(links)
+                        .join("path")
+                        .attr("d", d3.linkRadial()
+                            .angle(d => d.x)
+                            .radius(d => d.y));
+
+                    const node = gNode.selectAll("g")
+                        .data(nodes)
+                        .join("g")
+                        .attr("transform", d => `
+                            rotate(${d.x * 180 / Math.PI - 90})
+                            translate(${d.y},0)
+                        `)
+                        .attr("fill-opacity", d => d.children ? 1 : 0.6)
+                        .attr("stroke-opacity", 1);
+
+                    node.append("circle")
+                        .attr("r", 6)
+                        .attr("fill", d => d.depth === 1 ? color(d.data.name) : "#999");  // Asignar color según el SISTEMA PROBLÉMICO
+
+                    node.append("text")
+                        .attr("dy", "0.31em")
+                        .attr("x", d => d.x < Math.PI === !d.children ? 8 : -8)
+                        .attr("text-anchor", d => d.x < Math.PI === !d.children ? "start" : "end")
+                        .attr("transform", d => d.x >= Math.PI ? "rotate(180)" : null)
+                        .text(d => d.data.name)
+                        .call(wrapText, radius);
+                }
+
+                function wrapText(text, radius) {
+                    text.each(function () {
+                        var text = d3.select(this),
+                            words = text.text().split(/\s+/).reverse(),
+                            word,
+                            line = [],
+                            lineNumber = 0,
+                            lineHeight = 1.1, 
+                            y = text.attr("y"),
+                            dy = parseFloat(text.attr("dy")),
+                            tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+                        while (word = words.pop()) {
+                            line.push(word);
+                            tspan.text(line.join(" "));
+                            if (tspan.node().getComputedTextLength() > radius - 10) {
+                                line.pop();
+                                tspan.text(line.join(" "));
+                                line = [word];
+                                tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+                            }
+                        }
+                    });
+                }
+            })
+            .catch(error => console.error('Error al cargar los datos:', error));
+    </script>
+</body>
+</html>

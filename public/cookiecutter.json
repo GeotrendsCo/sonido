@@ -1,0 +1,7 @@
+{
+    "project_name": "Radial Tree - Ingenieria de Sonido",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "author_name": "Luis Esteban Gómez Cadavid",
+    "description": "A Flask project with D3.js and Plotly visualizations",
+    "python_version": "3.11"
+}

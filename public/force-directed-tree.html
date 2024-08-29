@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Force-Directed Tree - Cyberpunk Style</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000; /* Fondo negro */
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .node circle {
+            stroke: #FFFFFF; /* Blanco */
+            stroke-width: 1.5px;
+            cursor: pointer;
+        }
+
+        .node text {
+            font: 12px sans-serif;
+            pointer-events: none;
+            text-anchor: middle;
+            fill: #FFFFFF; /* Texto blanco */
+        }
+
+        .node--root circle {
+            fill: #c8ff00; /* Magenta neon para el nodo raíz */
+            r: 24px; /* Tamaño doble para el nodo raíz */
+        }
+
+        .node--level-1 circle {
+            fill: #ff007f; /* Rosa neon para el primer nivel */
+        }
+
+        .node--level-2 circle {
+            fill: #00ff7f; /* Verde neon para el segundo nivel */
+        }
+
+        .node--level-3 circle {
+            fill: #1e90ff; /* Azul neon para el tercer nivel */
+        }
+        .node--level-4 circle {
+            fill: #c4fbfd; /* Azul neon para el tercer nivel */
+        }
+
+        .link {
+            fill: none;
+            stroke: #FFFFFF; /* Blanco */
+            stroke-opacity: 0.9;
+            stroke-width: 1.5px;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script>
+        fetch('/force-directed-tree-data')
+            .then(response => response.json())
+            .then(data => {
+                const width = window.innerWidth;
+                const height = window.innerHeight;
+
+                const svg = d3.select("body").append("svg")
+                    .attr("viewBox", [-width / 2, -height / 2, width, height])
+                    .call(d3.zoom().on("zoom", (event) => {
+                        svg.attr("transform", event.transform);
+                    }))
+                    .append("g");
+
+                const simulation = d3.forceSimulation()
+                    .force("link", d3.forceLink().id(d => d.name).distance(100))
+                    .force("charge", d3.forceManyBody().strength(-300))
+                    .force("center", d3.forceCenter(0, 0));
+
+                const root = d3.hierarchy(data);
+
+                const links = root.links();
+                const nodes = root.descendants();
+
+                const link = svg.append("g")
+                    .attr("stroke", "#FFFFFF")  /* Blanco */
+                    /*.attr("stroke-opacity", 0.9)*/
+                    .selectAll("line")
+                    .data(links)
+                    .join("line")
+                    .attr("stroke-width", d => Math.sqrt(d.value));
+
+                const node = svg.append("g")
+                    .attr("stroke", "#FFFFFF")  /* Blanco */
+                    .attr("stroke-width", 1.5)
+                    .selectAll("g")
+                    .data(nodes)
+                    .join("g")
+                    .attr("class", d => {
+                        if (d.depth === 0) return "node node--root";
+                        if (d.depth === 1) return "node node--level-1";
+                        if (d.depth === 2) return "node node--level-2";
+                        return "node node--level-3";
+                    })
+                    .call(drag(simulation));
+
+                node.append("circle")
+                    .attr("r", d => {
+                        if (d.depth === 0) return 24; // Tamaño doble para el nodo raíz
+                        return 12 - d.depth * 2; // Disminuir tamaño según la jerarquía
+                    })
+                    .attr("fill", d => {
+                        if (d.depth === 0) return "#ff00ff"; // Magenta neon para el nodo raíz
+                        if (d.depth === 1) return "#ff007f"; // Rosa neon para el primer nivel
+                        if (d.depth === 2) return "#00ff7f"; // Verde neon para el segundo nivel
+                        if (d.depth === 3) return "#1e90ff"; // Azul neon para el tercer nivel
+                        if (d.depth === 4) return "#1e90ff"; // Azul neon para el tercer nivel
+                        return "#ff4500";  // Naranja neon para niveles más bajos
+                    });
+
+                node.append("text")
+                    .attr("dy", 3)
+                    .attr("x", d => d.children ? -8 : 8)
+                    .style("text-anchor", d => d.children ? "end" : "start")
+                    .text(d => d.data.name);
+
+                simulation
+                    .nodes(nodes)
+                    .on("tick", () => {
+                        link
+                            .attr("x1", d => d.source.x)
+                            .attr("y1", d => d.source.y)
+                            .attr("x2", d => d.target.x)
+                            .attr("y2", d => d.target.y);
+
+                        node
+                            .attr("transform", d => `translate(${d.x},${d.y})`);
+                    });
+
+                simulation.force("link")
+                    .links(links);
+
+                function drag(simulation) {
+                    function dragstarted(event, d) {
+                        if (!event.active) simulation.alphaTarget(0.3).restart();
+                        d.fx = d.x;
+                        d.fy = d.y;
+                    }
+
+                    function dragged(event, d) {
+                        d.fx = event.x;
+                        d.fy = event.y;
+                    }
+
+                    function dragended(event, d) {
+                        if (!event.active) simulation.alphaTarget(0);
+                        d.fx = null;
+                        d.fy = null;
+                    }
+
+                    return d3.drag()
+                        .on("start", dragstarted)
+                        .on("drag", dragged)
+                        .on("end", dragended);
+                }
+            })
+            .catch(error => console.error('Error al cargar los datos:', error));
+    </script>
+</body>
+</html>

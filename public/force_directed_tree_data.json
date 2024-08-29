@@ -1,0 +1,1078 @@
+{
+    "name": "Ingeniería de Sonido",
+    "children": [
+        {
+            "name": "C3",
+            "children": [
+                {
+                    "name": "RAP11",
+                    "children": [
+                        {
+                            "name": "FUNDAMENTOS DE PROGRAMACIÓN",
+                            "children": [
+                                {
+                                    "name": "CYI10RAC1",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYI13RAC4",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PROGRAMACIÓN PARA AUDIO",
+                            "children": [
+                                {
+                                    "name": "CYII14RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP12",
+                    "children": [
+                        {
+                            "name": "FUNDAMENTOS DE PROGRAMACIÓN",
+                            "children": [
+                                {
+                                    "name": "CYI11RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PROGRAMACIÓN PARA AUDIO",
+                            "children": [
+                                {
+                                    "name": "CYII15RAC2",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYII16RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TEORÍA DE SEÑALES",
+                            "children": [
+                                {
+                                    "name": "CYV114RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PROCESAMIENTO DIGITAL DE SEÑALES",
+                            "children": [
+                                {
+                                    "name": "CYVI116RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP13",
+                    "children": [
+                        {
+                            "name": "FUNDAMENTOS DE PROGRAMACIÓN",
+                            "children": [
+                                {
+                                    "name": "CYI12RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PROGRAMACIÓN PARA AUDIO",
+                            "children": [
+                                {
+                                    "name": "CYII17RAC4",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TEORÍA DE SEÑALES",
+                            "children": [
+                                {
+                                    "name": "CYV115RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PROCESAMIENTO DIGITAL DE SEÑALES",
+                            "children": [
+                                {
+                                    "name": "CYVI117RAC2",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVI118RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "C1",
+            "children": [
+                {
+                    "name": "RAP1",
+                    "children": [
+                        {
+                            "name": "FUNDAMENTOS DE ARMONÍA",
+                            "children": [
+                                {
+                                    "name": "CYII18RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TECNOLOGÍAS DE AUDIO",
+                            "children": [
+                                {
+                                    "name": "CYIII22RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LABORATORIO CREACIÓN SONORA",
+                            "children": [
+                                {
+                                    "name": "CYIII30RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "GRABACIÓN PARA MEDIOS AUDIOVISUALES",
+                            "children": [
+                                {
+                                    "name": "CYV49RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "POSPRODUCCIÓN MEDIOS AUDIOVISUALES",
+                            "children": [
+                                {
+                                    "name": "CYVI61RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LAB. AUDIO PARA VIDEOJUEGOS",
+                            "children": [
+                                {
+                                    "name": "CYIX112RAC5",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ENTRENAMIENTO AUDITIVO",
+                            "children": [
+                                {
+                                    "name": "CYI04RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "INTRODUCCIÓN A LA INGENIERÍA DE SONIDO",
+                            "children": [
+                                {
+                                    "name": "CYI07RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP2",
+                    "children": [
+                        {
+                            "name": "FUNDAMENTOS DE ARMONÍA",
+                            "children": [
+                                {
+                                    "name": "CYII19RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TECNOLOGÍAS DE AUDIO",
+                            "children": [
+                                {
+                                    "name": "CYIII23RAC2",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYIII25RAC4",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LABORATORIO CREACIÓN SONORA",
+                            "children": [
+                                {
+                                    "name": "CYIII31RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "SÍNTESIS DEL SONIDO",
+                            "children": [
+                                {
+                                    "name": "CYIV37RAC4",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "GRABACIÓN PARA MEDIOS AUDIOVISUALES",
+                            "children": [
+                                {
+                                    "name": "CYV50RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "POSPRODUCCIÓN MEDIOS AUDIOVISUALES",
+                            "children": [
+                                {
+                                    "name": "CYVI62RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "MEZCLA ENVOLVENTE E INMERSIVA",
+                            "children": [
+                                {
+                                    "name": "CYVII84RAC5",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "INTRODUCCIÓN A LA INGENIERÍA DE SONIDO",
+                            "children": [
+                                {
+                                    "name": "CYI08RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP8",
+                    "children": [
+                        {
+                            "name": "FUNDAMENTOS DE ARMONÍA",
+                            "children": [
+                                {
+                                    "name": "CYII20RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LABORATORIO CREACIÓN SONORA",
+                            "children": [
+                                {
+                                    "name": "CYIII32RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "GRABACIÓN DIGITAL DEL SONIDO",
+                            "children": [
+                                {
+                                    "name": "CYIV47RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LABORATORIO ACÚSTICA AMBIENTAL",
+                            "children": [
+                                {
+                                    "name": "CYVIII101RAC2",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVIII103RAC4",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ENTRENAMIENTO AUDITIVO",
+                            "children": [
+                                {
+                                    "name": "CYI05RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP9",
+                    "children": [
+                        {
+                            "name": "FUNDAMENTOS DE ARMONÍA",
+                            "children": [
+                                {
+                                    "name": "CYII21RAC4",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LABORATORIO CREACIÓN SONORA",
+                            "children": [
+                                {
+                                    "name": "CYIII33RAC4",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "GRABACIÓN DIGITAL DEL SONIDO",
+                            "children": [
+                                {
+                                    "name": "CYIV48RAC4",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LABORATORIO ACÚSTICA AMBIENTAL",
+                            "children": [
+                                {
+                                    "name": "CYVIII102RAC3",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVIII104RAC5",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ENTRENAMIENTO AUDITIVO",
+                            "children": [
+                                {
+                                    "name": "CYI06RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP3",
+                    "children": [
+                        {
+                            "name": "TECNOLOGÍAS DE AUDIO",
+                            "children": [
+                                {
+                                    "name": "CYIII24RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "GRABACIÓN PARA MEDIOS AUDIOVISUALES",
+                            "children": [
+                                {
+                                    "name": "CYV51RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "POSPRODUCCIÓN MEDIOS AUDIOVISUALES",
+                            "children": [
+                                {
+                                    "name": "CYVI63RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP5",
+                    "children": [
+                        {
+                            "name": "SÍNTESIS DEL SONIDO",
+                            "children": [
+                                {
+                                    "name": "CYIV34RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LAB. AUDIO PARA VIDEOJUEGOS",
+                            "children": [
+                                {
+                                    "name": "CYIX110RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP6",
+                    "children": [
+                        {
+                            "name": "SÍNTESIS DEL SONIDO",
+                            "children": [
+                                {
+                                    "name": "CYIV35RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "GRABACIÓN DIGITAL DEL SONIDO",
+                            "children": [
+                                {
+                                    "name": "CYIV45RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "POSPRODUCCIÓN MUSICAL",
+                            "children": [
+                                {
+                                    "name": "CYV55RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LAB. AUDIO PARA VIDEOJUEGOS",
+                            "children": [
+                                {
+                                    "name": "CYIX108RAC1",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYIX111RAC4",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP7",
+                    "children": [
+                        {
+                            "name": "SÍNTESIS DEL SONIDO",
+                            "children": [
+                                {
+                                    "name": "CYIV36RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "GRABACIÓN DIGITAL DEL SONIDO",
+                            "children": [
+                                {
+                                    "name": "CYIV46RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "POSPRODUCCIÓN MUSICAL",
+                            "children": [
+                                {
+                                    "name": "CYV56RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LABORATORIO ACÚSTICA AMBIENTAL",
+                            "children": [
+                                {
+                                    "name": "CYVIII100RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LAB. AUDIO PARA VIDEOJUEGOS",
+                            "children": [
+                                {
+                                    "name": "CYIX109RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP4",
+                    "children": [
+                        {
+                            "name": "GRABACIÓN PARA MEDIOS AUDIOVISUALES",
+                            "children": [
+                                {
+                                    "name": "CYV52RAC4",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "POSPRODUCCIÓN MEDIOS AUDIOVISUALES",
+                            "children": [
+                                {
+                                    "name": "CYVI64RAC4",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVI65RAC5",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP11",
+                    "children": [
+                        {
+                            "name": "POSPRODUCCIÓN MUSICAL",
+                            "children": [
+                                {
+                                    "name": "CYV57RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "MEZCLA ENVOLVENTE E INMERSIVA",
+                            "children": [
+                                {
+                                    "name": "CYVII82RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "REFUERZO SONORO",
+                            "children": [
+                                {
+                                    "name": "CYVII97RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LABORATORIO ACÚSTICA AMBIENTAL",
+                            "children": [
+                                {
+                                    "name": "CYVIII106RAC7",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP12",
+                    "children": [
+                        {
+                            "name": "POSPRODUCCIÓN MUSICAL",
+                            "children": [
+                                {
+                                    "name": "CYV58RAC4",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "MEZCLA ENVOLVENTE E INMERSIVA",
+                            "children": [
+                                {
+                                    "name": "CYVII83RAC4",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LABORATORIO ACÚSTICA AMBIENTAL",
+                            "children": [
+                                {
+                                    "name": "CYVIII107RAC8",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP13",
+                    "children": [
+                        {
+                            "name": "MEZCLA ENVOLVENTE E INMERSIVA",
+                            "children": [
+                                {
+                                    "name": "CYVII80RAC1",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVII81RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP10",
+                    "children": [
+                        {
+                            "name": "LABORATORIO ACÚSTICA AMBIENTAL",
+                            "children": [
+                                {
+                                    "name": "CYVIII105RAC6",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "C2",
+            "children": [
+                {
+                    "name": "RAP7",
+                    "children": [
+                        {
+                            "name": "PRINCIPIOS ACÚSTICA Y PSICOACÚSTICA",
+                            "children": [
+                                {
+                                    "name": "CYIII26RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ACÚSTICA",
+                            "children": [
+                                {
+                                    "name": "CYIV40RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ANÁLISIS VIBRATORIO",
+                            "children": [
+                                {
+                                    "name": "CYVI66RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CONTROL DE RUIDO Y VIBRACIONES",
+                            "children": [
+                                {
+                                    "name": "CYVII85RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "INTRODUCCIÓN A LA INGENIERÍA DE SONIDO",
+                            "children": [
+                                {
+                                    "name": "CYI09RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TEORÍA DE SEÑALES",
+                            "children": [
+                                {
+                                    "name": "CYV113RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP8",
+                    "children": [
+                        {
+                            "name": "PRINCIPIOS ACÚSTICA Y PSICOACÚSTICA",
+                            "children": [
+                                {
+                                    "name": "CYIII27RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ACÚSTICA",
+                            "children": [
+                                {
+                                    "name": "CYIV41RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ANÁLISIS VIBRATORIO",
+                            "children": [
+                                {
+                                    "name": "CYVI67RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ACÚSTICA DE RECINTOS",
+                            "children": [
+                                {
+                                    "name": "CYVI69RAC1",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVI70RAC2",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVI71RAC3",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVI72RAC4",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVI73RAC5",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CONTROL DE RUIDO Y VIBRACIONES",
+                            "children": [
+                                {
+                                    "name": "CYVII86RAC2",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVII87RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "DISEÑO SISTEMAS ELECTROACÚSTICOS",
+                            "children": [
+                                {
+                                    "name": "CYVII92RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "DIBUJO ARQUITECTÓNICO",
+                            "children": [
+                                {
+                                    "name": "CYI01RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP9",
+                    "children": [
+                        {
+                            "name": "PRINCIPIOS ACÚSTICA Y PSICOACÚSTICA",
+                            "children": [
+                                {
+                                    "name": "CYIII28RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CIRCUITOS ELÉCTRICOS",
+                            "children": [
+                                {
+                                    "name": "CYIV38RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ACÚSTICA",
+                            "children": [
+                                {
+                                    "name": "CYIV42RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CIRCUITOS ELECTRÓNICOS",
+                            "children": [
+                                {
+                                    "name": "CYV53RAC1",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ACÚSTICA DE RECINTOS",
+                            "children": [
+                                {
+                                    "name": "CYVI74RAC6",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CONTROL DE RUIDO Y VIBRACIONES",
+                            "children": [
+                                {
+                                    "name": "CYVII88RAC4",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVII89RAC5",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "DISEÑO SISTEMAS ELECTROACÚSTICOS",
+                            "children": [
+                                {
+                                    "name": "CYVII93RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "DIBUJO ARQUITECTÓNICO",
+                            "children": [
+                                {
+                                    "name": "CYI02RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP10",
+                    "children": [
+                        {
+                            "name": "PRINCIPIOS ACÚSTICA Y PSICOACÚSTICA",
+                            "children": [
+                                {
+                                    "name": "CYIII29RAC4",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CIRCUITOS ELÉCTRICOS",
+                            "children": [
+                                {
+                                    "name": "CYIV39RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ACÚSTICA",
+                            "children": [
+                                {
+                                    "name": "CYIV43RAC4",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYIV44RAC5",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CIRCUITOS ELECTRÓNICOS",
+                            "children": [
+                                {
+                                    "name": "CYV54RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ANÁLISIS VIBRATORIO",
+                            "children": [
+                                {
+                                    "name": "CYVI68RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ACÚSTICA DE RECINTOS",
+                            "children": [
+                                {
+                                    "name": "CYVI75RAC7",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "CONTROL DE RUIDO Y VIBRACIONES",
+                            "children": [
+                                {
+                                    "name": "CYVII90RAC6",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVII91RAC7",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "DISEÑO SISTEMAS ELECTROACÚSTICOS",
+                            "children": [
+                                {
+                                    "name": "CYVII94RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "DIBUJO ARQUITECTÓNICO",
+                            "children": [
+                                {
+                                    "name": "CYI03RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP12",
+                    "children": [
+                        {
+                            "name": "ACÚSTICA DE RECINTOS",
+                            "children": [
+                                {
+                                    "name": "CYVI76RAC8",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVI77RAC9",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVI78RAC10",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVI79RAC11",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "CYVI79RAC12",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "DISEÑO SISTEMAS ELECTROACÚSTICOS",
+                            "children": [
+                                {
+                                    "name": "CYVII95RAC4",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "REFUERZO SONORO",
+                            "children": [
+                                {
+                                    "name": "CYVII98RAC2",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RAP13",
+                    "children": [
+                        {
+                            "name": "DISEÑO SISTEMAS ELECTROACÚSTICOS",
+                            "children": [
+                                {
+                                    "name": "CYVII96RAC5",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "name": "REFUERZO SONORO",
+                            "children": [
+                                {
+                                    "name": "CYVII99RAC3",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
